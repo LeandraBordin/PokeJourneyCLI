@@ -1,0 +1,298 @@
+{
+  "region": "kanto",
+
+  "locations": [
+    {
+      "id": "pallet-town",
+      "type": "city",
+      "name": "Pallet Town",
+      "connects": ["kanto-route-1"],
+      "gym": null
+    },
+    {
+      "id": "viridian-city",
+      "type": "city",
+      "name": "Viridian City",
+      "connects": ["kanto-route-1", "kanto-route-2", "viridian-forest"],
+      "gym": {
+        "leader": "Giovanni",
+        "badge": "Earth Badge",
+        "order": 8
+      }
+    },
+    {
+      "id": "pewter-city",
+      "type": "city",
+      "name": "Pewter City",
+      "connects": ["kanto-route-2"],
+      "gym": {
+        "leader": "Brock",
+        "badge": "Boulder Badge",
+        "order": 1
+      }
+    },
+    {
+      "id": "cerulean-city",
+      "type": "city",
+      "name": "Cerulean City",
+      "connects": [
+        "kanto-route-4",
+        "kanto-route-5",
+        "kanto-route-9",
+        "kanto-route-24"
+      ],
+      "gym": {
+        "leader": "Misty",
+        "badge": "Cascade Badge",
+        "order": 2
+      }
+    },
+    {
+      "id": "vermilion-city",
+      "type": "city",
+      "name": "Vermilion City",
+      "connects": ["kanto-route-5", "kanto-route-11"],
+      "gym": {
+        "leader": "Lt. Surge",
+        "badge": "Thunder Badge",
+        "order": 3
+      }
+    },
+    {
+      "id": "lavender-town",
+      "type": "city",
+      "name": "Lavender Town",
+      "connects": ["kanto-route-8", "kanto-route-10", "kanto-route-12"],
+      "gym": null
+    },
+    {
+      "id": "celadon-city",
+      "type": "city",
+      "name": "Celadon City",
+      "connects": ["kanto-route-7", "kanto-route-8", "kanto-route-16"],
+      "gym": {
+        "leader": "Erika",
+        "badge": "Rainbow Badge",
+        "order": 4
+      }
+    },
+    {
+      "id": "saffron-city",
+      "type": "city",
+      "name": "Saffron City",
+      "connects": [
+        "kanto-route-5",
+        "kanto-route-6",
+        "kanto-route-7",
+        "kanto-route-8"
+      ],
+      "gym": {
+        "leader": "Sabrina",
+        "badge": "Marsh Badge",
+        "order": 6
+      }
+    },
+    {
+      "id": "fuchsia-city",
+      "type": "city",
+      "name": "Fuchsia City",
+      "connects": ["kanto-route-15", "kanto-route-18", "kanto-route-19"],
+      "gym": {
+        "leader": "Koga",
+        "badge": "Soul Badge",
+        "order": 5
+      }
+    },
+    {
+      "id": "cinnabar-island",
+      "type": "city",
+      "name": "Cinnabar Island",
+      "connects": ["kanto-sea-route-20", "kanto-route-21"],
+      "gym": {
+        "leader": "Blaine",
+        "badge": "Volcano Badge",
+        "order": 7
+      }
+    },
+    {
+      "id": "indigo-plateau",
+      "type": "city",
+      "name": "Indigo Plateau",
+      "connects": ["kanto-route-23"],
+      "gym": null
+    },
+
+    {
+      "id": "kanto-route-1",
+      "type": "route",
+      "name": "Route 1",
+      "connects": ["pallet-town", "viridian-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-2",
+      "type": "route",
+      "name": "Route 2",
+      "connects": ["viridian-city", "pewter-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-3",
+      "type": "route",
+      "name": "Route 3",
+      "connects": ["pewter-city", "mount-moon"],
+      "requirements": { "badges": ["Boulder Badge"] }
+    },
+    {
+      "id": "kanto-route-4",
+      "type": "route",
+      "name": "Route 4",
+      "connects": ["mount-moon", "cerulean-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-5",
+      "type": "route",
+      "name": "Route 5",
+      "connects": ["cerulean-city", "saffron-city", "vermilion-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-6",
+      "type": "route",
+      "name": "Route 6",
+      "connects": ["saffron-city", "vermilion-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-7",
+      "type": "route",
+      "name": "Route 7",
+      "connects": ["saffron-city", "celadon-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-8",
+      "type": "route",
+      "name": "Route 8",
+      "connects": ["saffron-city", "lavender-town", "celadon-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-9",
+      "type": "route",
+      "name": "Route 9",
+      "connects": ["cerulean-city", "rock-tunnel"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-10",
+      "type": "route",
+      "name": "Route 10",
+      "connects": ["rock-tunnel", "lavender-town"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-11",
+      "type": "route",
+      "name": "Route 11",
+      "connects": ["vermilion-city", "kanto-route-12"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-12",
+      "type": "route",
+      "name": "Route 12",
+      "connects": ["lavender-town", "kanto-route-13"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-13",
+      "type": "route",
+      "name": "Route 13",
+      "connects": ["kanto-route-12", "kanto-route-14"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-14",
+      "type": "route",
+      "name": "Route 14",
+      "connects": ["kanto-route-13", "kanto-route-15"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-15",
+      "type": "route",
+      "name": "Route 15",
+      "connects": ["kanto-route-14", "fuchsia-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-16",
+      "type": "route",
+      "name": "Route 16",
+      "connects": ["celadon-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-17",
+      "type": "route",
+      "name": "Route 17",
+      "connects": ["kanto-route-16", "kanto-route-18", "fuchsia-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-18",
+      "type": "route",
+      "name": "Route 18",
+      "connects": ["kanto-route-17", "fuchsia-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-19",
+      "type": "route",
+      "name": "Route 19",
+      "connects": ["fuchsia-city", "seafoam-islands"],
+      "requirements": { "hm": ["surf"] }
+    },
+    {
+      "id": "kanto-sea-route-20",
+      "type": "route",
+      "name": "Sea Route 20",
+      "connects": ["seafoam-islands", "cinnabar-island"],
+      "requirements": { "hm": ["surf"] }
+    },
+    {
+      "id": "kanto-route-21",
+      "type": "route",
+      "name": "Route 21",
+      "connects": ["cinnabar-island", "pallet-town"],
+      "requirements": { "hm": ["surf"] }
+    },
+    {
+      "id": "kanto-route-22",
+      "type": "route",
+      "name": "Route 22",
+      "connects": ["viridian-city"],
+      "requirements": {}
+    },
+    {
+      "id": "kanto-route-23",
+      "type": "route",
+      "name": "Route 23",
+      "connects": ["viridian-city", "indigo-plateau"],
+      "requirements": {
+        "badges": [
+          "Boulder Badge",
+          "Cascade Badge",
+          "Thunder Badge",
+          "Rainbow Badge",
+          "Soul Badge",
+          "Marsh Badge",
+          "Volcano Badge",
+          "Earth Badge"
+        ]
+      }
+    }
+  ]
+}

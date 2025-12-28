@@ -1,0 +1,98 @@
+[
+  {
+    "nome": "Leandra",
+    "regiao": "Kanto",
+    "genero": "Feminino",
+    "equipe": [
+      {
+        "nome": "charmander",
+        "id": 4,
+        "tipos": [
+          "fire"
+        ],
+        "stats": {
+          "hp": 39,
+          "attack": 52,
+          "defense": 43,
+          "sp_attack": 60,
+          "sp_defense": 50,
+          "speed": 65
+        },
+        "moves": [
+          {
+            "nome": "scratch",
+            "tipo": "normal",
+            "categoria": "physical",
+            "poder": 40,
+            "acuracia": 100,
+            "pp": 35
+          },
+          {
+            "nome": "growl",
+            "tipo": "normal",
+            "categoria": "status",
+            "poder": null,
+            "acuracia": 100,
+            "pp": 40
+          }
+        ],
+        "hpAtual": 0
+      }
+    ],
+    "pokedex": [],
+    "pc": [],
+    "insignias": [],
+    "mochila": [],
+    "dinheiro": 3000,
+    "localizacao": "viridian-city",
+    "id": 1
+  },
+  {
+    "nome": "leandra",
+    "regiao": "Kanto",
+    "genero": "Masculino",
+    "equipe": [
+      {
+        "nome": "squirtle",
+        "id": 7,
+        "tipos": [
+          "water"
+        ],
+        "stats": {
+          "hp": 44,
+          "attack": 48,
+          "defense": 65,
+          "sp_attack": 50,
+          "sp_defense": 64,
+          "speed": 43
+        },
+        "moves": [
+          {
+            "nome": "tackle",
+            "tipo": "normal",
+            "categoria": "physical",
+            "poder": 40,
+            "acuracia": 100,
+            "pp": 35
+          },
+          {
+            "nome": "tail-whip",
+            "tipo": "normal",
+            "categoria": "status",
+            "poder": null,
+            "acuracia": 100,
+            "pp": 30
+          }
+        ],
+        "hpAtual": 26
+      }
+    ],
+    "pokedex": [],
+    "pc": [],
+    "insignias": [],
+    "mochila": [],
+    "dinheiro": 3000,
+    "localizacao": "kanto-route-2",
+    "id": 2
+  }
+]

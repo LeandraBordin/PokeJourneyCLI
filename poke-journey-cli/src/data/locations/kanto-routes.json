@@ -1,0 +1,744 @@
+{
+  "region": "kanto",
+  "routes": {
+    "kanto-route-1": {
+      "areas": [
+        "295"
+      ],
+      "pokemons": [
+        "pidgey",
+        "rattata",
+        "raticate",
+        "sentret",
+        "furret",
+        "hoothoot",
+        "poochyena",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-10": {
+      "areas": [
+        "304"
+      ],
+      "pokemons": [
+        "rattata",
+        "raticate",
+        "spearow",
+        "fearow",
+        "ekans",
+        "sandshrew",
+        "nidoran-f",
+        "nidoran-m",
+        "zubat",
+        "venonat",
+        "venomoth",
+        "psyduck",
+        "poliwag",
+        "poliwhirl",
+        "machop",
+        "tentacool",
+        "slowpoke",
+        "magnemite",
+        "krabby",
+        "kingler",
+        "voltorb",
+        "marowak",
+        "horsea",
+        "goldeen",
+        "seaking",
+        "electabuzz",
+        "magikarp",
+        "gyarados",
+        "zapdos",
+        "quagsire",
+        "linoone",
+        "whismur",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-11": {
+      "areas": [
+        "305"
+      ],
+      "pokemons": [
+        "pidgey",
+        "pidgeotto",
+        "rattata",
+        "raticate",
+        "spearow",
+        "ekans",
+        "sandshrew",
+        "meowth",
+        "psyduck",
+        "poliwag",
+        "tentacool",
+        "slowpoke",
+        "magnemite",
+        "shellder",
+        "drowzee",
+        "hypno",
+        "krabby",
+        "horsea",
+        "goldeen",
+        "magikarp",
+        "gyarados",
+        "snorlax",
+        "noctowl",
+        "hoppip",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-12": {
+      "areas": [
+        "276"
+      ],
+      "pokemons": [
+        "pidgey",
+        "pidgeotto",
+        "oddish",
+        "gloom",
+        "venonat",
+        "psyduck",
+        "poliwag",
+        "bellsprout",
+        "weepinbell",
+        "tentacool",
+        "tentacruel",
+        "slowpoke",
+        "slowbro",
+        "farfetchd",
+        "krabby",
+        "horsea",
+        "seadra",
+        "goldeen",
+        "magikarp",
+        "gyarados",
+        "snorlax",
+        "quagsire",
+        "qwilfish",
+        "relicanth"
+      ]
+    },
+    "kanto-route-13": {
+      "areas": [
+        "306"
+      ],
+      "pokemons": [
+        "pidgey",
+        "pidgeotto",
+        "nidorina",
+        "nidorino",
+        "oddish",
+        "gloom",
+        "venonat",
+        "venomoth",
+        "psyduck",
+        "poliwag",
+        "bellsprout",
+        "weepinbell",
+        "tentacool",
+        "tentacruel",
+        "slowpoke",
+        "slowbro",
+        "farfetchd",
+        "krabby",
+        "chansey",
+        "horsea",
+        "seadra",
+        "goldeen",
+        "magikarp",
+        "gyarados",
+        "ditto",
+        "noctowl",
+        "hoppip",
+        "quagsire",
+        "qwilfish",
+        "linoone",
+        "whismur",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-14": {
+      "areas": [
+        "307"
+      ],
+      "pokemons": [
+        "pidgey",
+        "pidgeotto",
+        "nidorina",
+        "nidorino",
+        "oddish",
+        "gloom",
+        "venonat",
+        "venomoth",
+        "bellsprout",
+        "weepinbell",
+        "chansey",
+        "ditto",
+        "noctowl",
+        "hoppip",
+        "skiploom",
+        "quagsire",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-15": {
+      "areas": [
+        "308"
+      ],
+      "pokemons": [
+        "pidgey",
+        "pidgeotto",
+        "nidorina",
+        "nidorino",
+        "oddish",
+        "gloom",
+        "venonat",
+        "venomoth",
+        "bellsprout",
+        "weepinbell",
+        "chansey",
+        "ditto",
+        "noctowl",
+        "hoppip",
+        "quagsire",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-16": {
+      "areas": [
+        "309"
+      ],
+      "pokemons": [
+        "rattata",
+        "raticate",
+        "spearow",
+        "fearow",
+        "doduo",
+        "grimer",
+        "muk",
+        "snorlax",
+        "murkrow",
+        "slugma",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-17": {
+      "areas": [
+        "310"
+      ],
+      "pokemons": [
+        "rattata",
+        "raticate",
+        "spearow",
+        "fearow",
+        "poliwag",
+        "tentacool",
+        "ponyta",
+        "doduo",
+        "dodrio",
+        "grimer",
+        "muk",
+        "shellder",
+        "krabby",
+        "goldeen",
+        "magikarp",
+        "slugma",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-18": {
+      "areas": [
+        "311"
+      ],
+      "pokemons": [
+        "rattata",
+        "raticate",
+        "spearow",
+        "fearow",
+        "poliwag",
+        "tentacool",
+        "doduo",
+        "grimer",
+        "muk",
+        "shellder",
+        "krabby",
+        "goldeen",
+        "magikarp",
+        "murkrow",
+        "slugma",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-2": {
+      "areas": [
+        "296",
+        "320"
+      ],
+      "pokemons": [
+        "caterpie",
+        "metapod",
+        "butterfree",
+        "weedle",
+        "kakuna",
+        "beedrill",
+        "pidgey",
+        "pidgeotto",
+        "rattata",
+        "pikachu",
+        "nidoran-f",
+        "nidoran-m",
+        "hoothoot",
+        "noctowl",
+        "ledyba",
+        "ledian",
+        "spinarak",
+        "ariados",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-22": {
+      "areas": [
+        "313"
+      ],
+      "pokemons": [
+        "rattata",
+        "spearow",
+        "fearow",
+        "nidoran-f",
+        "nidoran-m",
+        "psyduck",
+        "mankey",
+        "poliwag",
+        "poliwhirl",
+        "ponyta",
+        "slowpoke",
+        "doduo",
+        "goldeen",
+        "magikarp",
+        "gyarados",
+        "linoone",
+        "whismur",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-24": {
+      "areas": [
+        "314"
+      ],
+      "pokemons": [
+        "charmander",
+        "caterpie",
+        "metapod",
+        "butterfree",
+        "weedle",
+        "kakuna",
+        "pidgey",
+        "pidgeotto",
+        "oddish",
+        "gloom",
+        "venonat",
+        "venomoth",
+        "psyduck",
+        "poliwag",
+        "abra",
+        "bellsprout",
+        "weepinbell",
+        "tentacool",
+        "slowpoke",
+        "krabby",
+        "horsea",
+        "goldeen",
+        "seaking",
+        "magikarp",
+        "gyarados",
+        "sunkern",
+        "linoone",
+        "whismur",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-25": {
+      "areas": [
+        "315"
+      ],
+      "pokemons": [
+        "caterpie",
+        "metapod",
+        "butterfree",
+        "weedle",
+        "kakuna",
+        "pidgey",
+        "pidgeotto",
+        "oddish",
+        "venonat",
+        "venomoth",
+        "psyduck",
+        "poliwag",
+        "poliwhirl",
+        "abra",
+        "bellsprout",
+        "weepinbell",
+        "slowpoke",
+        "krabby",
+        "kingler",
+        "goldeen",
+        "seaking",
+        "magikarp",
+        "gyarados",
+        "hoothoot",
+        "noctowl",
+        "suicune",
+        "linoone",
+        "whismur",
+        "bidoof",
+        "buizel",
+        "buneary"
+      ]
+    },
+    "kanto-route-26": {
+      "areas": [
+        "287"
+      ],
+      "pokemons": [
+        "caterpie",
+        "metapod",
+        "butterfree",
+        "weedle",
+        "kakuna",
+        "beedrill",
+        "raticate",
+        "ekans",
+        "arbok",
+        "sandslash",
+        "tentacool",
+        "tentacruel",
+        "ponyta",
+        "doduo",
+        "dodrio",
+        "shellder",
+        "exeggcute",
+        "magikarp",
+        "hoothoot",
+        "noctowl",
+        "chinchou",
+        "lanturn",
+        "quagsire",
+        "pineco",
+        "linoone",
+        "whismur",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-27": {
+      "areas": [
+        "288"
+      ],
+      "pokemons": [
+        "caterpie",
+        "metapod",
+        "butterfree",
+        "weedle",
+        "kakuna",
+        "beedrill",
+        "raticate",
+        "ekans",
+        "arbok",
+        "sandslash",
+        "tentacool",
+        "tentacruel",
+        "ponyta",
+        "doduo",
+        "dodrio",
+        "shellder",
+        "exeggcute",
+        "magikarp",
+        "hoothoot",
+        "noctowl",
+        "chinchou",
+        "lanturn",
+        "quagsire",
+        "pineco",
+        "linoone",
+        "whismur",
+        "luvdisc",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-28": {
+      "areas": [
+        "289"
+      ],
+      "pokemons": [
+        "arbok",
+        "golbat",
+        "poliwag",
+        "poliwhirl",
+        "ponyta",
+        "rapidash",
+        "doduo",
+        "dodrio",
+        "tangela",
+        "magikarp",
+        "sneasel",
+        "ursaring",
+        "donphan",
+        "linoone",
+        "whismur",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-3": {
+      "areas": [
+        "297",
+        "832"
+      ],
+      "pokemons": [
+        "pidgey",
+        "rattata",
+        "raticate",
+        "spearow",
+        "ekans",
+        "arbok",
+        "sandshrew",
+        "nidoran-f",
+        "nidoran-m",
+        "clefairy",
+        "jigglypuff",
+        "zubat",
+        "mankey",
+        "plusle",
+        "minun",
+        "gulpin",
+        "baltoy",
+        "shinx",
+        "magikarp"
+      ]
+    },
+    "kanto-route-4": {
+      "areas": [
+        "298",
+        "761"
+      ],
+      "pokemons": [
+        "rattata",
+        "raticate",
+        "spearow",
+        "ekans",
+        "arbok",
+        "sandshrew",
+        "clefairy",
+        "jigglypuff",
+        "zubat",
+        "psyduck",
+        "mankey",
+        "tentacool",
+        "slowpoke",
+        "krabby",
+        "horsea",
+        "goldeen",
+        "seaking",
+        "magikarp",
+        "gyarados",
+        "linoone",
+        "whismur",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-5": {
+      "areas": [
+        "299"
+      ],
+      "pokemons": [
+        "pidgey",
+        "pidgeotto",
+        "rattata",
+        "jigglypuff",
+        "oddish",
+        "gloom",
+        "meowth",
+        "mankey",
+        "abra",
+        "bellsprout",
+        "hoothoot",
+        "noctowl",
+        "snubbull",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-6": {
+      "areas": [
+        "300"
+      ],
+      "pokemons": [
+        "pidgey",
+        "pidgeotto",
+        "rattata",
+        "raticate",
+        "jigglypuff",
+        "oddish",
+        "meowth",
+        "psyduck",
+        "golduck",
+        "mankey",
+        "poliwag",
+        "poliwhirl",
+        "abra",
+        "bellsprout",
+        "slowpoke",
+        "magnemite",
+        "shellder",
+        "drowzee",
+        "krabby",
+        "goldeen",
+        "magikarp",
+        "gyarados",
+        "snubbull",
+        "granbull",
+        "linoone",
+        "whismur",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-7": {
+      "areas": [
+        "301"
+      ],
+      "pokemons": [
+        "pidgey",
+        "pidgeotto",
+        "rattata",
+        "raticate",
+        "spearow",
+        "vulpix",
+        "jigglypuff",
+        "oddish",
+        "meowth",
+        "persian",
+        "mankey",
+        "growlithe",
+        "abra",
+        "bellsprout",
+        "murkrow",
+        "snubbull",
+        "houndour",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-8": {
+      "areas": [
+        "302"
+      ],
+      "pokemons": [
+        "pidgey",
+        "pidgeotto",
+        "rattata",
+        "ekans",
+        "sandshrew",
+        "vulpix",
+        "jigglypuff",
+        "meowth",
+        "mankey",
+        "growlithe",
+        "abra",
+        "kadabra",
+        "haunter",
+        "noctowl",
+        "snubbull",
+        "plusle",
+        "minun",
+        "shinx"
+      ]
+    },
+    "kanto-route-9": {
+      "areas": [
+        "303"
+      ],
+      "pokemons": [
+        "rattata",
+        "raticate",
+        "spearow",
+        "fearow",
+        "ekans",
+        "sandshrew",
+        "nidoran-f",
+        "nidorina",
+        "nidoran-m",
+        "nidorino",
+        "zubat",
+        "venonat",
+        "venomoth",
+        "mankey",
+        "primeape",
+        "marowak",
+        "goldeen",
+        "seaking",
+        "magikarp",
+        "linoone",
+        "whismur",
+        "sableye",
+        "mawile",
+        "bidoof",
+        "buizel"
+      ]
+    },
+    "kanto-route-23": {
+      "areas": [
+        "329"
+      ],
+      "pokemons": [
+        "spearow",
+        "fearow",
+        "ekans",
+        "arbok",
+        "sandshrew",
+        "sandslash",
+        "nidorina",
+        "nidorino",
+        "psyduck",
+        "mankey",
+        "primeape",
+        "poliwag",
+        "poliwhirl",
+        "slowpoke",
+        "slowbro",
+        "kingler",
+        "seadra",
+        "goldeen",
+        "seaking",
+        "magikarp",
+        "gyarados",
+        "ditto"
+      ]
+    }
+  }
+}
