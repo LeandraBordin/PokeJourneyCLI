@@ -35,7 +35,7 @@
 ### Instalação
 ```bash
 # Clone o repositório
-git clone https://github.com/LeandraBordin/poke-journey-cli.git
+git clone https://github.com/LeandraBordin/PokeJourneyCLI.git
 
 # Entre na pasta
 cd poke-journey-cli
