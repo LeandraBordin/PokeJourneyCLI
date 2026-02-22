@@ -11,6 +11,7 @@ export class UIService {
   ║  [1] Jogar                         ║
   ║  [2] Criar personagem              ║
   ║  [3] Trocar personagem             ║
+  ║  [4] Excluir personagem            ║
   ║  [0] Sair                          ║
   ╚════════════════════════════════════╝
     `);
@@ -60,21 +61,21 @@ export class UIService {
 
       console.log(
         `│ ${formatCell(esquerda ? `[${i + 1}] ${esquerda.nome}` : '')}` +
-          `│ ${formatCell(direita ? `[${i + 2}] ${direita.nome}` : '')}│`
+          `│ ${formatCell(direita ? `[${i + 2}] ${direita.nome}` : '')}│`,
       );
 
       console.log(
         `│ ${formatCell(esquerda ? `  PODER ${esquerda.poder ?? 0}` : '')}` +
-          `│ ${formatCell(direita ? `  PODER ${direita.poder ?? 0}` : '')}│`
+          `│ ${formatCell(direita ? `  PODER ${direita.poder ?? 0}` : '')}│`,
       );
 
       console.log(
         `│ ${formatCell(
-          esquerda ? `  PP ${esquerda.pp}/${esquerda.ppMax}` : ''
+          esquerda ? `  PP ${esquerda.pp}/${esquerda.ppMax}` : '',
         )}` +
           `│ ${formatCell(
-            direita ? `  PP ${direita.pp}/${direita.ppMax}` : ''
-          )}│`
+            direita ? `  PP ${direita.pp}/${direita.ppMax}` : '',
+          )}│`,
       );
 
       if (i < 2) {
@@ -88,7 +89,7 @@ export class UIService {
   static exibirVidaPokemon(pokemon, titulo = 'POKEMON') {
     const porcentagem = pokemon.hpAtual / pokemon.hpMax;
     const preenchido = Math.round(
-      constants.CONFIG_UI.BARRA_HP_LARGURA * porcentagem
+      constants.CONFIG_UI.BARRA_HP_LARGURA * porcentagem,
     );
     const vazio = constants.CONFIG_UI.BARRA_HP_LARGURA - preenchido;
 
@@ -99,10 +100,10 @@ export class UIService {
     console.log(
       `│ ${pokemon.nome.toUpperCase().padEnd(15)} Lv ${
         pokemon.level ?? 1
-      }`.padEnd(30) + '│'
+      }`.padEnd(30) + '│',
     );
     console.log(
-      `│ HP ${barra} ${pokemon.hpAtual}/${pokemon.hpMax}`.padEnd(30) + '│'
+      `│ HP ${barra} ${pokemon.hpAtual}/${pokemon.hpMax}`.padEnd(30) + '│',
     );
     console.log('└─────────────────────────────┘');
   }
@@ -111,8 +112,8 @@ export class UIService {
     starters.forEach((starter, index) => {
       console.log(
         `[${index + 1}] Nome: ${starter.nome} | Tipo: ${starter.tipos.join(
-          '/'
-        )}`
+          '/',
+        )}`,
       );
     });
   }

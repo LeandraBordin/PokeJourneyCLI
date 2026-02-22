@@ -1,5 +1,5 @@
 import * as personagemStorage from '../storage/personagens.storage.js';
-
+import * as personagensService from '../personagens/personagens.js';
 export class GerenciadorPersonagens {
   constructor() {
     this.personagens = personagemStorage.carregarPersonagens();
@@ -37,5 +37,17 @@ export class GerenciadorPersonagens {
 
   salvarPersonagem(personagem) {
     personagemStorage.salvarPersonagem(personagem);
+  }
+  excluirPersonagem() {
+    const mensagem = personagemStorage.excluirPersonagem();
+    console.log(mensagem);
+    this.personagens = personagemStorage.carregarPersonagens();
+
+    const personagemExiste = this.personagens.find(
+      (p) => p.id === this.personagemAtual?.id,
+    );
+    if (!personagemExiste) {
+      this.personagemAtual = this.personagens[0] || null;
+    }
   }
 }

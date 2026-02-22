@@ -1,5 +1,5 @@
 import fs from 'fs';
-import readlineSync from 'readline-sync';
+import readlineSync, { question, questionInt } from 'readline-sync';
 const caminho = 'personagens/personagens.json';
 import * as constants from '../constants/constants.js';
 export function carregarPersonagens() {
@@ -34,7 +34,9 @@ export function salvarPersonagem(personagem) {
     lista[index] = personagem;
   } else {
     if (lista.length >= constants.MAX_PERSONAGENS) {
-      console.log('\nLimite máximo de 5 personagens atingido!\n');
+      console.log(
+        `\nLimite máximo de ${constants.MAX_PERSONAGENS} personagens atingido!\n`,
+      );
       return null;
     }
 
@@ -65,5 +67,34 @@ export function trocarPersonagem() {
   } else {
     console.log(`Não existem personagens a serem trocados...`);
     return null;
+  }
+}
+export function excluirPersonagem() {
+  const caminho = 'personagens/personagens.json';
+  const dados = fs.readFileSync(caminho, 'utf8');
+  const personagens = JSON.parse(dados);
+  if (personagens.length <= 1) {
+    return 'Não existem personagens a serem excluidos';
+  }
+  personagens.forEach((personagem, i) =>
+    console.log(`[${i + 1}] ${personagem.nome} - ${personagem.regiao}`),
+  );
+  let op = questionInt('Qual personagem deseja excluir?');
+  const selecionado = personagens[op - 1];
+  if (!selecionado) {
+    return 'Opção Inválida';
+  }
+  let usuariosFiltrados = personagens.filter(
+    (users) => users.id !== selecionado.id,
+  );
+  try {
+    fs.writeFileSync(
+      caminho,
+      JSON.stringify(usuariosFiltrados, null, 2),
+      'utf-8',
+    );
+    return `Usuário ${selecionado.nome} excluido com sucesso!`;
+  } catch (error) {
+    return `Não foi possível excluir o usuário ${selecionado.nome}, tente novamente`;
   }
 }

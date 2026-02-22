@@ -4,6 +4,7 @@ export const OPCOES_MENU = {
   JOGAR: 1,
   CRIAR_PERSONAGEM: 2,
   TROCAR_PERSONAGEM: 3,
+  EXCLUIR_PERSONAGEM: 4,
   SAIR: 0,
 };
 export const OPCOES_JOGO = {

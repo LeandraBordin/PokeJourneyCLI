@@ -17,13 +17,13 @@ async function menu() {
     opcaoMenu = ValidacaoService.solicitarOpcaoValida(
       'Selecione a opção desejada: ',
       constants.OPCOES_MENU.SAIR,
-      constants.OPCOES_MENU.TROCAR_PERSONAGEM
+      constants.OPCOES_MENU.EXCLUIR_PERSONAGEM,
     );
 
     await processarOpcaoMenu(
       opcaoMenu,
       gerenciadorPersonagens,
-      personagemAtual
+      personagemAtual,
     );
   } while (opcaoMenu !== constants.OPCOES_MENU.SAIR);
 }
@@ -43,6 +43,10 @@ async function processarOpcaoMenu(opcao, gerenciador, personagem) {
 
     case constants.OPCOES_MENU.TROCAR_PERSONAGEM:
       gerenciador.trocarPersonagem();
+      break;
+
+    case constants.OPCOES_MENU.EXCLUIR_PERSONAGEM:
+      gerenciador.excluirPersonagem();
       break;
 
     case constants.OPCOES_MENU.SAIR:
