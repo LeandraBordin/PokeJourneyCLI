@@ -12,14 +12,14 @@ export async function criarPokemon(nome) {
 
   const moves = data.moves
     .filter((move) =>
-      move.version_group_details.some((v) => v.level_learned_at === 1)
+      move.version_group_details.some((v) => v.level_learned_at === 1),
     )
     .map((move) => move.move.name);
 
   const movesDetalhados = await Promise.all(
     moves.map(async (moveName) => {
       const moveRes = await axios.get(
-        `https://pokeapi.co/api/v2/move/${moveName}`
+        `https://pokeapi.co/api/v2/move/${moveName}`,
       );
       const move = moveRes.data;
 
@@ -31,12 +31,14 @@ export async function criarPokemon(nome) {
         acuracia: move.accuracy,
         pp: move.pp,
       };
-    })
+    }),
   );
 
   return {
     nome: data.name,
     id: data.id,
+    level: 5,
+    experience: 0,
     tipos: data.types.map((t) => t.type.name),
     stats: {
       hp: data.stats[0].base_stat,
@@ -47,6 +49,8 @@ export async function criarPokemon(nome) {
       speed: data.stats[5].base_stat,
     },
     moves: movesDetalhados,
+    hpMax: Math.floor((data.stats[0].base_stat * 2 * 5) / 100 + 5 + 10),
+    hpAtual: Math.floor((data.stats[0].base_stat * 2 * 5) / 100 + 5 + 10),
   };
 }
 export function calcularHpBonus(baseHP, level) {

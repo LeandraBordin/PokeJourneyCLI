@@ -7,6 +7,16 @@ export const OPCOES_MENU = {
   EXCLUIR_PERSONAGEM: 4,
   SAIR: 0,
 };
+export const OPCOES_MENU_CIDADE = {
+  CENTRO_POKEMON: 1,
+  MERCADO_POKEMON: 2,
+  SAIR: 0,
+};
+export const OPCOES_MENU_CENTRO_POKEMON = {
+  CURAR_POKEMONS: 1,
+  VER_PC: 2,
+  SAIR: 0,
+};
 export const OPCOES_JOGO = {
   EXPLORAR: 1,
   POKEDEX: 2,

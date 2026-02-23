@@ -33,6 +33,34 @@ export class UIService {
   ╚════════════════════════════════════╝
     `);
   }
+  static exibirMenuCidade(personagem) {
+    console.log(`
+  ╔════════════════════════════════════╗
+  ║            MENU PRINCIPAL          ║
+  ╠════════════════════════════════════╣
+  ║ Personagem atual: ${personagem.nome.padEnd(16)} ║
+  ║ Região: ${personagem.regiao.padEnd(20)}       ║
+  ╠════════════════════════════════════╣
+  ║  [1] Centro Pokemon                ║
+  ║  [2] Mercado Pokemon               ║
+  ║  [0] Sair                          ║
+  ╚════════════════════════════════════╝
+    `);
+  }
+  static exibirMenuCentroPokemon(personagem) {
+    console.log(`
+  ╔════════════════════════════════════╗
+  ║            MENU PRINCIPAL          ║
+  ╠════════════════════════════════════╣
+  ║ Personagem atual: ${personagem.nome.padEnd(16)} ║
+  ║ Região: ${personagem.regiao.padEnd(20)}       ║
+  ╠════════════════════════════════════╣
+  ║  [1] Curar Pokemons                ║
+  ║  [2] Ver PC                        ║
+  ║  [0] Sair                          ║
+  ╚════════════════════════════════════╝
+    `);
+  }
 
   static exibirMenuBatalha() {
     console.log('\n┌───────────────┬───────────────┐');

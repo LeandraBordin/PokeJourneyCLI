@@ -1,6 +1,6 @@
 import fs from 'fs';
 import readlineSync, { question, questionInt } from 'readline-sync';
-const caminho = 'personagens/personagens.json';
+const caminho = 'poke-journey-cli/personagens/personagens.json';
 import * as constants from '../constants/constants.js';
 export function carregarPersonagens() {
   const dados = fs.readFileSync(caminho, 'utf8');
@@ -48,7 +48,7 @@ export function salvarPersonagem(personagem) {
 }
 
 export function trocarPersonagem() {
-  const caminho = 'personagens/personagens.json';
+  const caminho = 'poke-journey-cli/personagens/personagens.json';
   const dados = fs.readFileSync(caminho, 'utf8');
   const personagens = JSON.parse(dados);
   if (personagens.length !== 1) {
@@ -70,7 +70,7 @@ export function trocarPersonagem() {
   }
 }
 export function excluirPersonagem() {
-  const caminho = 'personagens/personagens.json';
+  const caminho = 'poke-journey-cli/personagens/personagens.json';
   const dados = fs.readFileSync(caminho, 'utf8');
   const personagens = JSON.parse(dados);
   if (personagens.length <= 1) {
@@ -96,5 +96,23 @@ export function excluirPersonagem() {
     return `Usuário ${selecionado.nome} excluido com sucesso!`;
   } catch (error) {
     return `Não foi possível excluir o usuário ${selecionado.nome}, tente novamente`;
+  }
+}
+
+export function salvarPokemon(playerID, pokemonAtualizado) {
+  let personagens = [];
+  if (fs.existsSync(caminho)) {
+    const dados = fs.readFileSync(caminho, 'utf8');
+    try {
+      personagens = JSON.parse(dados);
+    } catch {
+      personagens = [];
+    }
+  }
+
+  const personagem = personagens.find((p) => p.id === playerID);
+  if (personagem && personagem.equipe[0]) {
+    personagem.equipe[0] = pokemonAtualizado;
+    fs.writeFileSync(caminho, JSON.stringify(personagens, null, 2), 'utf8');
   }
 }

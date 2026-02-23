@@ -1,0 +1,150 @@
+[
+  {
+    "nome": "Leandra",
+    "regiao": "Kanto",
+    "genero": "Feminino",
+    "equipe": [
+      {
+        "nome": "charizard",
+        "id": 6,
+        "level": 36,
+        "experience": 6558,
+        "tipos": [
+          "fire",
+          "flying"
+        ],
+        "stats": {
+          "hp": 78,
+          "attack": 84,
+          "defense": 78,
+          "sp_attack": 109,
+          "sp_defense": 85,
+          "speed": 100
+        },
+        "moves": [
+          {
+            "nome": "scratch",
+            "tipo": "normal",
+            "categoria": "physical",
+            "poder": 40,
+            "acuracia": 100,
+            "pp": 35
+          },
+          {
+            "nome": "wing-attack",
+            "tipo": "flying",
+            "categoria": "physical",
+            "poder": 60,
+            "acuracia": 100,
+            "pp": 35
+          },
+          {
+            "nome": "leer",
+            "tipo": "normal",
+            "categoria": "status",
+            "poder": null,
+            "acuracia": 100,
+            "pp": 30
+          },
+          {
+            "nome": "growl",
+            "tipo": "normal",
+            "categoria": "status",
+            "poder": null,
+            "acuracia": 100,
+            "pp": 40
+          },
+          {
+            "nome": "ember",
+            "tipo": "fire",
+            "categoria": "special",
+            "poder": 40,
+            "acuracia": 100,
+            "pp": 25
+          },
+          {
+            "nome": "counter",
+            "tipo": "fighting",
+            "categoria": "physical",
+            "poder": null,
+            "acuracia": 100,
+            "pp": 20
+          },
+          {
+            "nome": "smokescreen",
+            "tipo": "normal",
+            "categoria": "status",
+            "poder": null,
+            "acuracia": 100,
+            "pp": 20
+          },
+          {
+            "nome": "metal-claw",
+            "tipo": "steel",
+            "categoria": "physical",
+            "poder": 50,
+            "acuracia": 95,
+            "pp": 35
+          },
+          {
+            "nome": "crunch",
+            "tipo": "dark",
+            "categoria": "physical",
+            "poder": 80,
+            "acuracia": 100,
+            "pp": 15
+          },
+          {
+            "nome": "heat-wave",
+            "tipo": "fire",
+            "categoria": "special",
+            "poder": 95,
+            "acuracia": 90,
+            "pp": 10
+          },
+          {
+            "nome": "dragon-claw",
+            "tipo": "dragon",
+            "categoria": "physical",
+            "poder": 80,
+            "acuracia": 100,
+            "pp": 15
+          },
+          {
+            "nome": "flare-blitz",
+            "tipo": "fire",
+            "categoria": "physical",
+            "poder": 120,
+            "acuracia": 100,
+            "pp": 15
+          },
+          {
+            "nome": "air-slash",
+            "tipo": "flying",
+            "categoria": "special",
+            "poder": 75,
+            "acuracia": 95,
+            "pp": 15
+          },
+          {
+            "nome": "shadow-claw",
+            "tipo": "ghost",
+            "categoria": "physical",
+            "poder": 70,
+            "acuracia": 100,
+            "pp": 15
+          }
+        ],
+        "hpMax": 180,
+        "hpAtual": 12
+      }
+    ],
+    "pokedex": [],
+    "pc": [],
+    "insignias": [],
+    "mochila": [],
+    "dinheiro": 3000,
+    "localizacao": "kanto-route-2",
+    "id": 1
+  }
+]

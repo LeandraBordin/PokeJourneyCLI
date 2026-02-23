@@ -2,6 +2,7 @@ import { PokemonService } from './pokemon.service.js';
 import { ValidacaoService } from './validation.service.js';
 import * as constants from '../constants/constants.js';
 import { UIService } from './ui.service.js';
+import * as evolutionService from '../pokemons/pokemon.evolution.js';
 export class BatalhaService {
   constructor(pokemonJogador, pokemonInimigo) {
     this.pokemonJogador = PokemonService.prepararPokemonJogador(pokemonJogador);
@@ -21,7 +22,7 @@ export class BatalhaService {
     const opcaoBatalha = ValidacaoService.solicitarOpcaoValida(
       'Selecione a opção desejada: ',
       constants.OPCOES_BATALHA.ATACAR,
-      constants.OPCOES_BATALHA.FUGIR
+      constants.OPCOES_BATALHA.FUGIR,
     );
 
     switch (opcaoBatalha) {
@@ -52,12 +53,12 @@ export class BatalhaService {
     const opcaoMovimento = ValidacaoService.solicitarOpcaoValida(
       '\nEscolha o movimento: ',
       1,
-      this.pokemonJogador.moves.length
+      this.pokemonJogador.moves.length,
     );
 
     const resultado = PokemonService.usarMovimento(
       this.pokemonJogador,
-      opcaoMovimento - 1
+      opcaoMovimento - 1,
     );
 
     if (!resultado.sucesso) {
@@ -80,7 +81,7 @@ export class BatalhaService {
 
     if (this.pokemonInimigo.hpAtual <= 0) {
       console.log(
-        constants.MENSAGENS.POKEMON_DERROTADO(this.pokemonInimigo.nome)
+        constants.MENSAGENS.POKEMON_DERROTADO(this.pokemonInimigo.nome),
       );
       this.emBatalha = false;
       return false;
@@ -94,7 +95,7 @@ export class BatalhaService {
     await this.aguardar(1000);
 
     const indiceMovimento = PokemonService.selecionarMovimentoIA(
-      this.pokemonInimigo
+      this.pokemonInimigo,
     );
 
     if (indiceMovimento === null) {
@@ -104,7 +105,7 @@ export class BatalhaService {
 
     const resultado = PokemonService.usarMovimento(
       this.pokemonInimigo,
-      indiceMovimento
+      indiceMovimento,
     );
 
     this.pokemonInimigo = resultado.pokemon;
@@ -122,7 +123,7 @@ export class BatalhaService {
 
     if (this.pokemonJogador.hpAtual <= 0) {
       console.log(
-        constants.MENSAGENS.POKEMON_DERROTADO(this.pokemonJogador.nome)
+        constants.MENSAGENS.POKEMON_DERROTADO(this.pokemonJogador.nome),
       );
       this.emBatalha = false;
       return false;
@@ -142,10 +143,23 @@ export class BatalhaService {
       if (!continuarAposInimigo || !this.emBatalha) break;
     }
 
-    return {
+    let resultado = {
       venceu: this.pokemonInimigo.hpAtual <= 0,
       pokemonJogador: this.pokemonJogador,
     };
+
+    if (resultado.venceu) {
+      const experienciaGanha = evolutionService.calcularExperienciaGanha(
+        this.pokemonInimigo,
+      );
+      resultado.pokemonJogador =
+        await evolutionService.aumentarNivelComVerificacao(
+          this.pokemonJogador,
+          this.pokemonJogador.experience,
+        );
+    }
+
+    return resultado;
   }
 
   aguardar(ms) {
